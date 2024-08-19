@@ -61,6 +61,10 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 * BERT Sentiment Analysis
   * Bidirectional Encoder Representations from Transformers (BERT) is a transformer-based machine learning technique for natural language processing (NLP) pre-training developed by Google. BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of NLP tasks. BERT has been widely adopted in academia and industry for various NLP tasks such as sentiment analysis, question answering, and named entity recognition.
 
+* StreamLit
+
+* Docker
+
 ---
 ## Results
 
