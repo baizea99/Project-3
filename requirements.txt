@@ -8,3 +8,4 @@ spacy
 mlxtend
 transformers
 torch==2.0.1
+numpy
