@@ -8,14 +8,6 @@ ______________
 ___________
 
 
-* [Abstract](#Abstract)
-* [Data](#Data)
-* [Methods](#Methods)
-* [Limitations](#Limitations)
-* [Conclusions](#Conclusions)
-* [References/Footnotes](#References/Footnotes)
-
-
 ## Project Team Members:
 * Angel Alcantara
 * Aniel Rios
@@ -23,6 +15,14 @@ ___________
 * Jeff Destine
 * Josephine Robideau 
 * Kalvin Anglin
+
+## Table of Contents
+* [Abstract](#Abstract)
+* [Data](#Data)
+* [Methods](#Methods)
+* [Limitations](#Limitations)
+* [Conclusions](#Conclusions)
+* [References/Footnotes](#References/Footnotes)
 
 
 ## Abstract
