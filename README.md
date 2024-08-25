@@ -54,10 +54,10 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 ## Exploration Process
 ### Recreate System
 To achieve your objective,
-	1. User is prompted to select a movie
-	2. System locates movie reviews based on selection and analyzes the reviews based on sentiment
-	3. Emotion Detection Algorithm classifies the description of the movie based on emotion
-	4. Recommendations are provided based on the movie selection, providing users with a cinematic body of work to explore
+> - User is prompted to select a movie
+> - System locates movie reviews based on selection and analyzes the reviews based on sentiment
+> - Emotion Detection Algorithm classifies the description of the movie based on emotion
+> - Recommendations are provided based on the movie selection, providing users with a cinematic body of work to explore
 
 ### Tools Used
 - ChatGPT / DALL-E 3 (This model is designed for natural language understanding and generation of text and images)
