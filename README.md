@@ -1,7 +1,6 @@
 ______________
-<p align="center">
-# CINEMATIC AI
-</p>
+<h1 style="text-align: center;">CINEMATIC AI</h1>
+
 ![DALL·E 2024-08-22 20 10 20 - A sleek, modern product image showcasing an AI model named 'Cinematic AI ' The design features a dark background with a cinematic feel, incorporating](https://github.com/user-attachments/assets/e32063c4-542d-4062-bc64-e59aa71d8943)
 ___________
 
