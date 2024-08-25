@@ -18,7 +18,7 @@ ___________
 * [Methods](#Methods)
 * [Limitations](#Limitations)
 * [Conclusions](#Conclusions)
-* [References/Footnotes](#References/Footnotes)
+* [References](#References)
 
 
 ## Abstract
@@ -46,22 +46,22 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 ## Problems Solved
 -
 
-## Process
-
-## Data Collection
-- 
+## Data Collection & Interpretation
+* Data fetching, Google Research, Kaggle, Yelp, Data World, IMDB, NYT,
+* EDA. Imported CSV files, created dataframes, and utilized pandas and Python functions to search, select, and handle missing data. Identified key features for further analysis
+* Emotional algorithm applied to classify sentences based on the 6 emotions (Joy, Sadness, Anger, Fear, Love, Surprise)
 
 ## Cleanup
--
+* Data sanitized by removing whitespace and splitting sentences based on the delimiter such as periods or commas, to accurately parse and analyze the text
 
 ### Exploration Process
 
 ### Recreate System
 To achieve your objective,
-	1. 
-	2.
-	3. 
-	4.
+	1. User is prompted to select a movie
+	2. System locates movie reviews based on selection and analyzes the reviews based on sentiment
+	3. Emotion Detection Algorithm classifies the description of the movie based on emotion
+	4. Recommendations are provided based on the movie selection, providing users with a cinematic body of work to explore
 
 ### Tools Used
 - ChatGPT / DALL-E 3 (This model is designed for natural language understanding and generation of text and images)
@@ -100,9 +100,7 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 
 ## Project Management
 |  Phases | Details|
-* Data Fetching, Google searches, Kaggle, Data World, IMDB, NYT
 * Software Version Control. Repository created on GitHub. GitHub Projects are used to create and track tasks based on key questions; the Git branch is used to upload files from the local computer to a remote repository. Utilized "compare & pull requests" to compare branch changes before merging into the main branch correlation, comparison, summary statistics, sentiment analysis, and time series analysis
-* EDA. Imported CSV files, created dataframes, and utilized pandas and Python functions to search, select, and handle missing data. Identified key features for further analysis
 * Model Selection & Fine-Tuning. Utilized dictionaries, lists, loops, column slicing, string manipulation, and train-test split to prevent data leakage. Ensured high-quality structured data is visualized and fed into the models for text classification
 
 ---
@@ -132,20 +130,19 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 
 ---
 ## Results
-
+-
 ___
 ## Future Considerations
-
+-
 
 * **Lingering Questions**
     * **Datasets:** 
 
 ## Conclusion
+-
 
 
-
-
-## References/Footnotes
+## References
 * https://www.motivationalinterviewing.org/sites/default/files/fogartyjco99.pdf
 * https://www.tensorflow.org/text/tutorials/classify_text_with_bert
 * https://www.kaggle.com/code/harshjain123/bert-for-everyone-tutorial-implementation
