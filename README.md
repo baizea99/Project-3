@@ -54,8 +54,7 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 ## Cleanup
 * Data sanitized by removing whitespace and splitting sentences based on the delimiter such as periods or commas, to accurately parse and analyze the text
 
-### Exploration Process
-
+## Exploration Process
 ### Recreate System
 To achieve your objective,
 	1. User is prompted to select a movie
@@ -120,8 +119,8 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 * LSTM (Long Short-Term Memory) is a type of recurrent neural network (RNN) architecture that is well-suited for sequence prediction problems. LSTM networks are capable of learning long-term dependencies in sequential data and are widely used in natural language processing (NLP) tasks such as sentiment analysis, speech recognition, and machine translation. LSTM networks have a unique architecture that includes memory cells, input gates, output gates, and forget gates to control the flow of information through the network. This allows LSTM networks to capture long-range dependencies and model complex sequential patterns in the data.
 
 **Developing Techniques**:
-    * One-shot learning (Model is trained to recognize new classes or categories from only a single example)
-    * Zero-shot learning (Model is trained to recognize and classify objects or concepts it has never seen before by leveraging knowledge from related tasks)
+* One-shot learning (Model is trained to recognize new classes or categories from only a single example)
+* Zero-shot learning (Model is trained to recognize and classify objects or concepts it has never seen before by leveraging knowledge from related tasks)
 
 ## Platforms
 * [StreamLit](!https://streamlit.io/) 
