@@ -43,9 +43,6 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 ## Goals
 -
 
-## Problems Solved
--
-
 ## Data Collection & Interpretation
 * Data fetching, Google Research, Kaggle, Yelp, Data World, IMDB, NYT,
 * EDA. Imported CSV files, created dataframes, and utilized pandas and Python functions to search, select, and handle missing data. Identified key features for further analysis
@@ -75,8 +72,14 @@ To achieve your objective,
 - Transformers (Transformers are a type of deep learning model architecture primarily used in natural language processing (NLP) tasks)
 - TF BERT Model (Pre-trained deep learning model designed by Google to understand the context of words)
 
-## Problems Encountered
-> -
+## Issues Encountered/How They Were Mitigated
+### Emotion Detection Model:
+> - Did not yield accurate results when using a sentiment analysis forward method using VADER, switched to NLP
+> - Low accuracy score using LSTM model. The model was switched to incorporate a pre-trained BERT model with a custom layer
+> - Training time is at 20 min/epoch; through further experimentation with batch size, this was limited to 15 min/epoch
+### Movie Recommendation:
+> - Received memory error when training a KNN model with a large dataset; now uses custom function and cosine similarity scores to yield faster results
+> - All small datasets to train the models were outdated by over 25 years; we had to use a larger dataset that was outdated by 15 years due to hardware limitations
 
 ## Data
 
