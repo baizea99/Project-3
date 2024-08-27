@@ -134,3 +134,6 @@ Sentiment Analysis allows users to classify movie reviews based on positive or n
 
 ## References
 [A Review on Text-Based Emotion Detection - Techniques, Applications, Datasets, and Future Directions](https://arxiv.org/pdf/2205.03235)
+
+[Cinematic-AI (1).pdf](https://github.com/user-attachments/files/16755947/Cinematic-AI.1.pdf)
+
