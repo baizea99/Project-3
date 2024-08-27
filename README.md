@@ -75,6 +75,8 @@ To achieve your objective,
 ### Movie Recommendation:
 > - Received memory error when training a KNN model with a large dataset; now uses custom function and cosine similarity scores to yield faster results
 > - All small datasets to train the models were outdated by over 25 years; we had to use a larger dataset that was outdated by 15 years due to hardware limitations
+### Miscellaneous:
+> - Conflict when trying to merge two applications into one user-interface
 
 ## Data
 
@@ -121,13 +123,14 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 
 ___
 ## Future Considerations
--
-
-* **Lingering Questions**
-    * **Datasets:** 
+> - Having a clear and concise project structure overview from the start
+> - Establishing deadline protocols that give ample time for troubleshooting software
+> - Ensuring every recipient has roles and responsibilities established
+> - Tracking deadline executions via communication
+> - Being cognizant of the age of data
 
 ## Conclusion
--
+- 
 
 
 ## References
