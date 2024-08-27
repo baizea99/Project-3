@@ -25,12 +25,7 @@ ___________
 Our movie recommendation system harnesses the power of sentiment analysis to deliver a personalized cinematic experience. By deeply analyzing movie reviews, we uncover the underlying emotional patterns that drive viewer preferences and behaviors. This also allows us to understand what recommendations truly resonate with each user based off the input they give us on the search bar. Mapping these sentiments to film attributes allows users to match their current insights and explore new genres as our engine provides a seamless gateway to your next cinematic adventures. Our in-depth analysis empowers you to make well-informed viewing decisions in the future.
 
 **Project Overview:**
-* Business solution is applicable for the following industries:
-    * Entertainment
-    * Sales/Marketing
-    * Healthcare
-    * Education
-    * Tech
+* Business solution is applicable for the Entertainment Industry
 
 * Text needed for Emotion Detection derived from the following data sources:
     * Movie Reviews
@@ -86,18 +81,6 @@ To achieve your objective,
 We reviewed datasets that provided the most opportunity for a thorough exploration of our key questions:
 
 * [Kaggle Emotions Dataset](https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp?resource=download)
-
-* [Data World Sentiment Analysis Dataset](https://data.world/crowdflower/sentiment-analysis-in-text)
-
-* [Data World Brands and Product Emotions](https://data.world/crowdflower/brands-and-product-emotions)
-
-* [IMDB Movie Reviews](https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
-
-* [NYT Movie Reviews](https://www.kaggle.com/c/word2vec-nlp-tutorial/data)
-
-* [Yelp Reviews](https://www.kaggle.com/yelp-dataset/yelp-dataset)
-
-* [Amazon Reviews](https://www.kaggle.com/datafiniti/consumer-reviews-of-amazon-products)
 ---
 
 ## Project Management
