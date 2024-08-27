@@ -47,7 +47,7 @@ def get_similar_movies(movie_id):
     if 'results' in data:
         similar_movies = [(movie['title'], f"https://image.tmdb.org/t/p/w200{movie['poster_path']}") for movie in data['results'][:5]]  # Get top 5 similar movies
         return similar_movies
-    return []
+    return None
 
 def plot_sentiment_summary(sentiments):
     sentiment_counts = pd.Series(sentiments).value_counts(normalize=True) * 100
@@ -57,7 +57,9 @@ def plot_sentiment_summary(sentiments):
     return positive_percentage, negative_percentage
 
 # Streamlit app
-st.title("Cinematic AI")
+st.set_page_config(page_title="Movie Sentiment Analyzer", layout="wide")
+
+st.title("🎬 Cinematic AI")
 
 # User input for movie title
 movie_title = st.text_input("Enter a movie title:")
@@ -67,45 +69,38 @@ if movie_title:
     movie_id, poster_url = get_movie_details(movie_title)
     
     if movie_id:
-        # Display the movie poster and sentiment summary side by side
-        col1, col2 = st.columns([1, 1])  # Adjust the proportions as needed
+        col1, col2 = st.columns([1, 2])
         
         with col1:
-            # Display the movie poster
+            st.markdown("### Movie Poster")
             if poster_url:
-                st.image(poster_url, caption=f"{movie_title} Poster", width=200)
+                st.image(poster_url, caption=f"{movie_title}", width=200)  # Smaller movie poster
         
         with col2:
-            # Sentiment analysis and summary
+            st.markdown("### Sentiment Summary")
             reviews = get_movie_reviews(movie_id)
             if reviews:
                 sentiments = model.predict(reviews)
                 positive_percentage, negative_percentage = plot_sentiment_summary(sentiments)
                 
-                st.write("### Sentiment Summary")
-                
-                # Display the Positive sentiment bar with percentage
                 st.write(f"Positive: {positive_percentage:.1f}%")
                 st.progress(positive_percentage / 100.0)
                 
-                # Display the Negative sentiment bar with percentage
                 st.write(f"Negative: {negative_percentage:.1f}%")
                 st.progress(negative_percentage / 100.0)
         
-        # Get and display similar movies
-        st.write("### Recommended Movies:")
+        st.markdown("### Recommended Movies")
         similar_movies = get_similar_movies(movie_id)
         if similar_movies:
             cols = st.columns(len(similar_movies))
             for idx, (title, poster) in enumerate(similar_movies):
                 with cols[idx]:
                     if poster:
-                        st.image(poster, caption=title, width=100)
+                        st.image(poster, caption=title, width=100)  # Smaller recommended posters
                     else:
                         st.write(title)
         
-        # Display individual reviews with sentiment
-        st.write("### Individual Reviews")
+        st.markdown("### Individual Reviews")
         if reviews:
             for idx, review in enumerate(reviews):
                 sentiment = sentiments[idx]
