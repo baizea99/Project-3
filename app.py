@@ -49,12 +49,25 @@ def get_similar_movies(movie_id):
         return similar_movies
     return None
 
-def plot_sentiment_summary(sentiments):
+def calculate_sentiment_summary(sentiments):
     sentiment_counts = pd.Series(sentiments).value_counts(normalize=True) * 100
     positive_percentage = sentiment_counts.get('positive', 0)
     negative_percentage = sentiment_counts.get('negative', 0)
-    
     return positive_percentage, negative_percentage
+
+def plot_sentiment_summary(positive_percentage, negative_percentage):
+    st.markdown(f"""
+        <div style="width: 100%; background-color: lightgrey; border-radius: 5px;">
+            <div style="width: {positive_percentage}%; background-color: green; text-align: center; color: white; padding: 5px 0; border-radius: 5px;">
+                Positive: {positive_percentage:.1f}%
+            </div>
+        </div>
+        <div style="width: 100%; background-color: lightgrey; border-radius: 5px; margin-top: 10px;">
+            <div style="width: {negative_percentage}%; background-color: red; text-align: center; color: white; padding: 5px 0; border-radius: 5px;">
+                Negative: {negative_percentage:.1f}%
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
 
 # Streamlit app
 st.set_page_config(page_title="Movie Sentiment Analyzer", layout="wide")
@@ -72,33 +85,28 @@ if movie_title:
         col1, col2 = st.columns([1, 2])
         
         with col1:
-            st.markdown("### Movie Poster")
             if poster_url:
-                st.image(poster_url, caption=f"{movie_title}", width=200)  # Smaller movie poster
+                st.image(poster_url, caption="", width=200)  # Display the poster without "Movie Poster" header
         
         with col2:
-            st.markdown("### Sentiment Summary")
+            st.markdown("### Review Sentiment Summary")
             reviews = get_movie_reviews(movie_id)
             if reviews:
                 sentiments = model.predict(reviews)
-                positive_percentage, negative_percentage = plot_sentiment_summary(sentiments)
+                positive_percentage, negative_percentage = calculate_sentiment_summary(sentiments)
                 
-                st.write(f"Positive: {positive_percentage:.1f}%")
-                st.progress(positive_percentage / 100.0)
-                
-                st.write(f"Negative: {negative_percentage:.1f}%")
-                st.progress(negative_percentage / 100.0)
-        
-        st.markdown("### Recommended Movies")
-        similar_movies = get_similar_movies(movie_id)
-        if similar_movies:
-            cols = st.columns(len(similar_movies))
-            for idx, (title, poster) in enumerate(similar_movies):
-                with cols[idx]:
-                    if poster:
-                        st.image(poster, caption=title, width=100)  # Smaller recommended posters
-                    else:
-                        st.write(title)
+                plot_sentiment_summary(positive_percentage, negative_percentage)
+            
+            st.markdown("### Recommended Movies")
+            similar_movies = get_similar_movies(movie_id)
+            if similar_movies:
+                cols = st.columns(len(similar_movies))
+                for idx, (title, poster) in enumerate(similar_movies):
+                    with cols[idx]:
+                        if poster:
+                            st.image(poster, caption=title, width=100)  # Smaller recommended posters
+                        else:
+                            st.write(title)
         
         st.markdown("### Individual Reviews")
         if reviews:
