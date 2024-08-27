@@ -1,0 +1,11 @@
+streamlit
+jupyter
+notebook
+pandas
+textblob
+beautifulsoup4
+spacy
+mlxtend
+transformers
+torch==2.0.1
+numpy
