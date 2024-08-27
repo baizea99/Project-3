@@ -115,7 +115,10 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 
 ---
 ## Results
--
+* Metric scores from SVM for Sentiment Analysis:
+
+![Screenshot 2024-08-26 at 8 02 24 PM](https://github.com/user-attachments/assets/3448bfb6-81c6-4b2a-8c82-ec578aff94a9)
+
 ___
 ## Future Considerations
 -
