@@ -130,14 +130,7 @@ ___
 > - Being cognizant of the age of data
 
 ## Conclusion
-- 
-
+Sentiment Analysis allows users to classify movie reviews based on positive or negative emotions. 
 
 ## References
-* https://www.motivationalinterviewing.org/sites/default/files/fogartyjco99.pdf
-* https://www.tensorflow.org/text/tutorials/classify_text_with_bert
-* https://www.kaggle.com/code/harshjain123/bert-for-everyone-tutorial-implementation
-* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6856204/#:~:text=We%20define%20neutral%20affect%20as,rather%20than%20a%20neutral%20reaction
-* https://www.verywellmind.com/color-psychology-2795824
-* https://www.kdnuggets.com/how-to-fine-tune-bert-sentiment-analysis-hugging-face-transformers
-* https://kind.sigs.k8s.io/
+
