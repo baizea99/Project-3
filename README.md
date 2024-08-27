@@ -36,7 +36,7 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 * Emotion Detection: Emotion categories such as happy, sad, angry, etc.
 
 ## Goals
--
+- 
 
 ## Data Collection & Interpretation
 * Data fetching, Google Research, Kaggle, Yelp, Data World, IMDB, NYT,
@@ -79,7 +79,6 @@ To achieve your objective,
 > - Conflict when trying to merge two applications into one user-interface
 
 ## Data
-
 We reviewed datasets that provided the most opportunity for a thorough exploration of our key questions:
 
 * [Kaggle Emotions Dataset](https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp?resource=download)
@@ -133,4 +132,4 @@ ___
 Sentiment Analysis allows users to classify movie reviews based on positive or negative emotions. 
 
 ## References
-
+[A Review on Text-Based Emotion Detection - Techniques, Applications, Datasets, and Future Directions](https://arxiv.org/pdf/2205.03235)
