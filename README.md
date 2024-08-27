@@ -40,7 +40,7 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 - Expand and broaden their horizons for different iterations of genre    
 
 ## Data Collection & Interpretation
-* Data fetching, Google Research, Kaggle, Yelp, Data World, IMDB, NYT,
+* Data fetching, Google Research, Kaggle, Yelp, Data World, TMDB, NYT,
 * EDA. Imported CSV files, created dataframes, and utilized pandas and Python functions to search, select, and handle missing data. Identified key features for further analysis
 * Emotional algorithm applied to classify sentences based on the 6 emotions (Joy, Sadness, Anger, Fear, Love, Surprise)
 
