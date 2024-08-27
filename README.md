@@ -27,7 +27,7 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 **Project Overview:**
 * Business solution applies to the Entertainment Industry
 
-* Text needed for Emotion Detection derived from the following data sources:
+* Text needed for Sentiment Analysis derived from the following data sources:
     * Movie Reviews
 
  **Types of Sentiment Analysis**
