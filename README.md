@@ -25,7 +25,7 @@ ___________
 Our movie recommendation system harnesses the power of sentiment analysis to deliver a personalized cinematic experience. By deeply analyzing movie reviews, we uncover the underlying emotional patterns that drive viewer preferences and behaviors. This also allows us to understand what recommendations truly resonate with each user based off the input they give us on the search bar. Mapping these sentiments to film attributes allows users to match their current insights and explore new genres as our engine provides a seamless gateway to your next cinematic adventures. Our in-depth analysis empowers you to make well-informed viewing decisions in the future.
 
 **Project Overview:**
-* Business solution is applicable for the Entertainment Industry
+* Business solution applies to the Entertainment Industry
 
 * Text needed for Emotion Detection derived from the following data sources:
     * Movie Reviews
@@ -36,7 +36,8 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 * Emotion Detection: Emotion categories such as happy, sad, angry, etc.
 
 ## Goals
-- 
+- Provide an application that enhances the moviegoer's experience
+- Expand and broaden their horizons for different iterations of genre    
 
 ## Data Collection & Interpretation
 * Data fetching, Google Research, Kaggle, Yelp, Data World, IMDB, NYT,
@@ -44,7 +45,7 @@ Our movie recommendation system harnesses the power of sentiment analysis to del
 * Emotional algorithm applied to classify sentences based on the 6 emotions (Joy, Sadness, Anger, Fear, Love, Surprise)
 
 ## Cleanup
-* Data sanitized by removing whitespace and splitting sentences based on the delimiter such as periods or commas, to accurately parse and analyze the text
+* Data sanitized by removing whitespace and splitting sentences based on the delimiter, such as periods or commas, to accurately parse and analyze the text
 
 ## Exploration Process
 ### Recreate System
