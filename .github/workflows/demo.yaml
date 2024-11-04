@@ -1,6 +1,6 @@
 name: Docker                                  # workflow name
 on:
-  push:                                       
+  push:
     branches:                                 # similar to "only" in GitLab
       - main
 jobs:
@@ -36,9 +36,7 @@ jobs:
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'MEDIUM'
-        continue-on-error: true    
-    steps:
-      - run: echo "This is a test step"
+        continue-on-error: true             # allow the build to fail, similar to "allow_failure: true" in GitLab
   integration:
     runs-on: ubuntu-latest
     needs: container_scanning
